@@ -1,0 +1,532 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 1300px) {
+  .main_mv {
+    display: none;
+  }
+  .main {
+    height: 100vh;
+  }
+  .main nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+  }
+  .main nav ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 0;
+    flex: 1;
+    gap: 40px;
+  }
+  .main nav ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .main nav ul li .icon {
+    transition: 0.1s ease-in-out;
+  }
+  .main nav ul li:hover .drop_down, .main nav ul li:hover .drop_down2 {
+    display: flex !important;
+  }
+  .main nav ul li:hover .icon {
+    transform: rotate(-180deg);
+  }
+  .main nav ul li .drop_down {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: absolute;
+    left: 100px;
+    top: 60px;
+    border-radius: 15px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px;
+    width: 130px;
+    height: 140px;
+    margin: 5px;
+  }
+  .main nav ul li .drop_down .item {
+    cursor: pointer;
+    display: block;
+    padding: 3px;
+  }
+  .main nav ul li .drop_down .item img {
+    height: 12px;
+    width: 12px;
+  }
+  .main nav ul li .drop_down .item span {
+    padding: 10px;
+    color: hsl(0, 0%, 41%);
+    font-size: 0.9em;
+  }
+  .main nav ul li .drop_down2 {
+    position: absolute;
+    top: 60px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+  .main nav ul li .drop_down2 span {
+    padding: 10px;
+    color: hsl(0, 0%, 41%);
+    font-size: 0.9em;
+  }
+  .main nav ul li a {
+    font-family: "Epilogue", sans-serif;
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    font-size: 0.9em;
+    font-weight: 500;
+  }
+  .main nav ul li a i {
+    padding: 5px;
+    font-size: 0.7em;
+  }
+  .main nav ul li a:hover {
+    color: hsl(0, 0%, 8%);
+  }
+  .main nav .login {
+    margin: 0px 10px 0px 10px;
+  }
+  .main nav .login a {
+    font-family: "Epilogue", sans-serif;
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    font-size: 0.9em;
+  }
+  .main nav .login a:hover {
+    color: hsl(0, 0%, 8%);
+  }
+  .main nav .register {
+    margin: 0px 10px 0px 10px;
+    border: 2px solid hsl(0, 0%, 41%);
+    padding: 8px 13px 8px 13px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .main nav .register a {
+    font-family: "Epilogue", sans-serif;
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    font-size: 0.9em;
+  }
+  .main nav .register:hover {
+    border-color: hsl(0, 0%, 8%);
+  }
+  .main nav .register:hover a {
+    color: hsl(0, 0%, 8%);
+  }
+  .main .sub_main {
+    height: 80%;
+  }
+  .main .sub_main .content .text {
+    display: flex;
+    flex-direction: column;
+    padding: 110px 50px 50px 50px;
+    gap: 50px;
+  }
+  .main .sub_main .content .text h1 {
+    font-family: "Epilogue", sans-serif;
+    font-weight: 700;
+    font-size: 4.5em;
+  }
+  .main .sub_main .content .text p {
+    color: hsl(0, 0%, 41%);
+    font-family: "Epilogue", sans-serif;
+    font-weight: 500;
+    width: 380px;
+  }
+  .main .sub_main .content .text a {
+    text-decoration: none;
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 8%);
+    width: 145px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 1.2em;
+  }
+  .main .sub_main .content .text a:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+    border: 1px solid hsl(0, 0%, 8%);
+  }
+  .main .sub_main .content .text ul {
+    display: flex;
+  }
+  .main .sub_main .content .text ul li {
+    list-style: none;
+    padding-right: 45px;
+  }
+  .main .sub_main .content .image img {
+    height: 90%;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .main {
+    display: none;
+  }
+  .main_mv {
+    padding: 0px;
+  }
+  .main_mv .logo_menu {
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main_mv .logo_menu h1 {
+    font-size: 3em;
+  }
+  .main_mv .logo_menu img {
+    width: 40px;
+    height: 30px;
+    margin: 10px;
+  }
+  .main_mv .mobile_nav {
+    position: absolute;
+    background-color: hsl(0, 0%, 98%);
+    right: 0;
+    top: 0;
+    height: 130%;
+    width: 70%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .main_mv .mobile_nav .close {
+    position: absolute;
+    right: 0;
+    padding: 10px;
+  }
+  .main_mv .mobile_nav .list {
+    padding: 50px 50px 50px 20px;
+  }
+  .main_mv .mobile_nav .login, .main_mv .mobile_nav .register {
+    text-align: center;
+    padding: 10px;
+  }
+  .main_mv .mobile_nav .login a, .main_mv .mobile_nav .register a {
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    font-size: 1.1em;
+  }
+  .main_mv .mobile_nav .register {
+    border: 1px solid black;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .main_mv .mobile_nav .logres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main_mv .mobile_nav li {
+    list-style: none;
+    margin: 10px;
+  }
+  .main_mv .mobile_nav li a {
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    font-size: 1.2em;
+    font-family: "Epilogue", sans-serif;
+    font-weight: 500;
+  }
+  .main_mv .mobile_nav li a i {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 0.6em;
+  }
+  .main_mv .mobile_nav li .drop_down .item_wrapm {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main_mv .mobile_nav li .drop_down .item_wrapm .item {
+    padding: 10px;
+  }
+  .main_mv .mobile_nav li .drop_down .item_wrapm .item span {
+    padding-left: 20px;
+    font-size: 1.2em;
+    color: hsl(0, 0%, 41%);
+  }
+  .main_mv .mobile_nav li .drop_down .item_wrapm .item img {
+    height: 20px;
+    width: 20px;
+  }
+  .main_mv .mobile_nav li .drop_down2 {
+    display: none;
+  }
+  .main_mv .mobile_nav li .drop_down2 .item_wrap .item {
+    padding: 10px;
+  }
+  .main_mv .mobile_nav li .drop_down2 .item_wrap .item span {
+    font-size: 1.2em;
+    color: hsl(0, 0%, 41%);
+  }
+  .main_mv .content_mv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main_mv .content_mv .image_mv img {
+    height: 100%;
+    width: 100%;
+  }
+  .main_mv .text_mv {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .main_mv .text_mv h1 {
+    font-family: "Epilogue", sans-serif;
+    font-weight: 700;
+    font-size: 2.4em;
+  }
+  .main_mv .text_mv p {
+    font-size: 1.2em;
+    color: hsl(0, 0%, 41%);
+    font-weight: 500;
+  }
+  .main_mv .text_mv a {
+    text-decoration: none;
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 8%);
+    width: 145px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin: 30px;
+  }
+  .main_mv .text_mv a:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+    border: 1px solid hsl(0, 0%, 8%);
+  }
+  .main_mv .text_mv ul {
+    display: flex;
+    justify-content: center;
+  }
+  .main_mv .text_mv ul li {
+    list-style: none;
+    padding: 15px;
+  }
+  .main_mv .text_mv ul li img {
+    height: 30px;
+    width: 55px;
+  }
+}
+.rotate_transition {
+  transform: rotate(180deg);
+}
+
+.show_dropdown {
+  display: block !important;
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 600px) {
+  .main {
+    display: none;
+  }
+  .main_mv {
+    height: auto;
+    position: relative;
+  }
+  .main_mv .logo_menu {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main_mv .logo_menu h1 {
+    font-size: 4em;
+  }
+  .main_mv .logo_menu img {
+    width: 60px;
+    height: 40px;
+    margin: 10px;
+  }
+  .main_mv .logo_menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main_mv .mobile_nav {
+    position: absolute;
+    background-color: hsl(0, 0%, 98%);
+    right: 0;
+    top: 0;
+    height: 90%;
+    width: 70%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .main_mv .mobile_nav .close {
+    position: absolute;
+    right: 0;
+    padding: 10px;
+  }
+  .main_mv .mobile_nav .list {
+    padding: 50px 50px 50px 20px;
+  }
+  .main_mv .mobile_nav .login, .main_mv .mobile_nav .register {
+    text-align: center;
+    padding: 10px;
+  }
+  .main_mv .mobile_nav .login a, .main_mv .mobile_nav .register a {
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    font-size: 1.1em;
+  }
+  .main_mv .mobile_nav .register {
+    border: 1px solid black;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .main_mv .mobile_nav .logres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main_mv .mobile_nav li {
+    list-style: none;
+    margin: 10px;
+  }
+  .main_mv .mobile_nav li a {
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    font-size: 1.2em;
+    font-family: "Epilogue", sans-serif;
+    font-weight: 500;
+  }
+  .main_mv .mobile_nav li a i {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 0.6em;
+  }
+  .main_mv .mobile_nav li .drop_down .item_wrapm {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main_mv .mobile_nav li .drop_down .item_wrapm .item {
+    padding: 10px;
+  }
+  .main_mv .mobile_nav li .drop_down .item_wrapm .item span {
+    padding-left: 20px;
+    font-size: 1.2em;
+    color: hsl(0, 0%, 41%);
+  }
+  .main_mv .mobile_nav li .drop_down .item_wrapm .item img {
+    height: 20px;
+    width: 20px;
+  }
+  .main_mv .mobile_nav li .drop_down2 {
+    display: none;
+  }
+  .main_mv .mobile_nav li .drop_down2 .item_wrap .item {
+    padding: 10px;
+  }
+  .main_mv .mobile_nav li .drop_down2 .item_wrap .item span {
+    font-size: 1.2em;
+    color: hsl(0, 0%, 41%);
+  }
+  .main_mv .content_mv {
+    display: flex;
+    flex-direction: column;
+  }
+  .main_mv .content_mv .image_mv {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .main_mv .content_mv .image_mv img {
+    width: 100%;
+  }
+  .main_mv .content_mv .text_mv {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+  }
+  .main_mv .content_mv .text_mv h1 {
+    font-family: "Epilogue", sans-serif;
+    font-weight: 700;
+    font-size: 4em;
+  }
+  .main_mv .content_mv .text_mv p {
+    font-size: 2em;
+    color: hsl(0, 0%, 41%);
+    font-weight: 500;
+  }
+  .main_mv .content_mv .text_mv a {
+    text-decoration: none;
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 8%);
+    width: 220px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 2em;
+    margin: 30px;
+  }
+  .main_mv .content_mv .text_mv a:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+    border: 1px solid hsl(0, 0%, 8%);
+  }
+  .main_mv .content_mv .text_mv ul {
+    display: flex;
+    justify-content: center;
+  }
+  .main_mv .content_mv .text_mv ul li {
+    list-style: none;
+    padding: 55px;
+  }
+  .main_mv .content_mv .text_mv ul li img {
+    height: 50px;
+    width: 100px;
+  }
+}

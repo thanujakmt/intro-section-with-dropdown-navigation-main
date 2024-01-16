@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down Navigation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="scss/css/index.css">
+</head>
+<body>
+    <div class="container-fluid main">
+        <nav class="navbar navbar-expand-lg">
+            <ul>
+                <img src="/images/logo.svg" alt="">
+                <li><a href="#" class="arrow">Features<i class="fa-solid fa-chevron-down icon" ></i></a>
+                    <div class="drop_down">
+                        <div class="item_wrap">
+                            <div class="item">
+                                <img src="/images/icon-todo.svg" alt=""><span>Todo List</span>
+                            </div>
+                            <div class="item">
+                                <img src="/images/icon-calendar.svg" alt=""><span >Calendar</span>
+                            </div>
+                            <div class="item">
+                                <img src="/images/icon-reminders.svg" alt=""><span>Reminders</span>
+                            </div>
+                            <div class="item">
+                                <img src="/images/icon-planning.svg" alt=""><span >Planning</span>
+                            </div>
+                        </div>
+                    </div>  
+                </li>
+                <li><a href="#">Company<i class="fa-solid fa-chevron-down icon"></i></i></a>
+                    <div class="drop_down2">
+                        <div class="item_wrap">
+                            <div class="item">
+                                <span>History</span>
+                            </div>
+                            <div class="item">
+                                <span>Our Team</span>
+                            </div>
+                            <div class="item">
+                                <span>Blog</span>
+                            </div>
+                        </div>
+                    </div>  
+                </li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <div class="login"><a href="#">Login</a></div>
+            <div class="register"><a href="#">Register</a></div>
+        </nav>
+        <div class="container sub_main">
+            <div class="row content">
+                <div class="col-md-6 col-12 text">
+                    <h1>Make <br> remote work</h1>
+                    <p>Get your team in sync, no matter your location. Streamline processes, 
+                        create team rituals, and watch productivity soar.
+                    </p>
+                    <a href="#">Learn more</a>
+                    <ul class="p-0">
+                        <li><img src="/images/client-databiz.svg" alt=""></li>
+                        <li><img src="/images/client-audiophile.svg" alt=""></li>
+                        <li><img src="/images/client-meet.svg" alt=""></li>
+                        <li><img src="/images/client-maker.svg" alt=""></li>
+                    </ul>
+                </div>
+                <div class="col-md-5 col-12 image">
+                    <img src="/images/image-hero-desktop.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid main_mv">
+        <div class="logo_menu">
+            <h1>snap</h1>
+            <img id="menu_icon" src="/images/icon-menu.svg" alt="">
+        </div>
+        <div class="mobile_nav">
+            <img class="close" src="/images/icon-close-menu.svg" alt="">
+            <div class="list">
+                <li><a href="#" class="arrow1">Features<i class="fa-solid fa-chevron-down icon1" ></i></a>
+                    <div class="drop_down">
+                        <div class="item_wrapm">
+                            <div class="item">
+                                <img src="/images/icon-todo.svg" alt=""><span>Todo List</span>
+                            </div>
+                            <div class="item">
+                                <img src="/images/icon-calendar.svg" alt=""><span >Calendar</span>
+                            </div>
+                            <div class="item">
+                                <img src="/images/icon-reminders.svg" alt=""><span>Reminders</span>
+                            </div>
+                            <div class="item">
+                                <img src="/images/icon-planning.svg" alt=""><span >Planning</span>
+                            </div>
+                        </div>
+                    </div>  
+                </li>
+                <li><a href="#" class="Company">Company<i class="fa-solid fa-chevron-down icon2"></i></i></a>
+                    <div class="drop_down2" id="Company_dropdown">
+                        <div class="item_wrap">
+                            <div class="item">
+                                <span>History</span>
+                            </div>
+                            <div class="item">
+                                <span>Our Team</span>
+                            </div>
+                            <div class="item">
+                                <span>Blog</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">About</a></li>
+                <div class="logres">
+                    <div class="login"><a href="#">Login</a></div>
+                    <div class="register"><a href="#">Register</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="row content_mv">
+            <div class="image_mv col-md-6">
+                <img src="/images/image-hero-mobile.png" alt="">
+            </div>
+            <div class="text_mv col-md-6">
+                <h1>Make remote work</h1>
+                <p>
+                    Get your team in sync, no matter your location. Streamline processes, 
+                    create team rituals, and watch productivity soar.
+                </p>
+                <a href="#">Learn more</a>
+                <ul>
+                    <li><img src="/images/client-databiz.svg" alt=""></li>
+                    <li><img src="/images/client-audiophile.svg" alt=""></li>
+                    <li><img src="/images/client-meet.svg" alt=""></li>
+                    <li><img src="/images/client-maker.svg" alt=""></li>
+        
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
